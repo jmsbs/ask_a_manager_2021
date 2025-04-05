@@ -3,7 +3,7 @@ AskAManager:
   outputs:
     dev:
       type: duckdb
-      path: '/home/jmsbs/_dev/askAManager/AskAManager.db'
+      path: '/home/jmsbs/_dev/askAManager/AskAManager/dev.duckdb'
       extensions:
         - httpfs
         - parquet
