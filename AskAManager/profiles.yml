@@ -1,0 +1,9 @@
+AskAManager:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/home/jmsbs/_dev/askAManager/AskAManager.db'
+      extensions:
+        - httpfs
+        - parquet
