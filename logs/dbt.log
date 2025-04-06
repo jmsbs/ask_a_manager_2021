@@ -163,3 +163,40 @@ Runtime Error
 [0m07:53:01.867671 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04d53645d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04d53cf610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f04d5363550>]}
 [0m07:53:01.868078 [debug] [MainThread]: Flushing usage events
 [0m07:53:02.263475 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:38:11.626614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f69c74d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f7e39b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f69c7a10>]}
+
+
+============================== 09:38:11.629392 | 822cec53-c0d4-4d63-8ab6-0af9321f51ee ==============================
+[0m09:38:11.629392 [info ] [MainThread]: Running with dbt=1.9.3
+[0m09:38:11.629939 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/jmsbs/.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:38:11.637696 [info ] [MainThread]: dbt version: 1.9.3
+[0m09:38:11.638276 [info ] [MainThread]: python version: 3.11.11
+[0m09:38:11.638672 [info ] [MainThread]: python path: /home/jmsbs/_dev/sf_DBT/.venv/bin/python
+[0m09:38:11.639057 [info ] [MainThread]: os info: Linux-6.13.8-200.fc41.x86_64-x86_64-with-glibc2.40
+[0m09:38:11.914430 [info ] [MainThread]: Using profiles dir at /home/jmsbs/.dbt
+[0m09:38:11.915047 [info ] [MainThread]: Using profiles.yml file at /home/jmsbs/.dbt/profiles.yml
+[0m09:38:11.915458 [info ] [MainThread]: Using dbt_project.yml file at /home/jmsbs/_dev/askAManager/dbt_project.yml
+[0m09:38:11.915912 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m09:38:11.916955 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.33927268, "process_in_blocks": "24", "process_kernel_time": 0.241037, "process_mem_max_rss": "123340", "process_out_blocks": "8", "process_user_time": 1.283556}
+[0m09:38:11.917573 [debug] [MainThread]: Command `dbt debug` failed at 09:38:11.917456 after 0.34 seconds
+[0m09:38:11.918098 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f6a1d250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f5758c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f17f6ada050>]}
+[0m09:38:11.918658 [debug] [MainThread]: Flushing usage events
+[0m09:38:12.319361 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:38:19.140557 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12aa088c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12aa082ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12aad5b650>]}
+
+
+============================== 09:38:19.144347 | 3dec6008-dacd-4afe-b88f-0013054a3666 ==============================
+[0m09:38:19.144347 [info ] [MainThread]: Running with dbt=1.9.3
+[0m09:38:19.144974 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/jmsbs/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m09:38:19.145565 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/jmsbs/_dev/askAManager/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m09:38:19.146616 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.054599155, "process_in_blocks": "0", "process_kernel_time": 0.2116, "process_mem_max_rss": "90132", "process_out_blocks": "16", "process_user_time": 1.06559}
+[0m09:38:19.147116 [debug] [MainThread]: Command `dbt run` failed at 09:38:19.147001 after 0.06 seconds
+[0m09:38:19.147680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12aa47e210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12adcb51d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f12adcb5310>]}
+[0m09:38:19.148247 [debug] [MainThread]: Flushing usage events
+[0m09:38:19.548283 [debug] [MainThread]: An error was encountered while trying to flush usage events
