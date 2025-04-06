@@ -1,3 +1,6 @@
 _data/
 tasklist.md
 AskAManager.db
+AskAManager/dev.duckdb
+AskAManager/profiles.yml
+AskAManager/.user.yml
