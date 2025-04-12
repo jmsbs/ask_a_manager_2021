@@ -17,9 +17,5 @@ SELECT
         OR LOWER(REPLACE (REPLACE (country, ' ', ''), '.', '')) LIKE '%uk%' THEN 'UK'
         WHEN LENGTH(country) > 50 THEN NULL
         ELSE country
-    END AS country_encoded,
-    c.name,
-    c.alpha2,
-    c.alpha3
+    END AS country_encoded
 FROM {{ ref ('raw_data') }}
-JOIN    read_csv_auto('/home/jmsbs/_dev/askAManager/_data/countries.csv') as c
